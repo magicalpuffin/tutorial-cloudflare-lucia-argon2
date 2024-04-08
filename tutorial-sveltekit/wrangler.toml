@@ -1,0 +1,28 @@
+name = "tutorial-sveltekit"
+compatibility_date = "2024-04-05"
+pages_build_output_dir = ".svelte-kit/cloudflare"
+
+
+[[services]]
+binding = "ARGON2"
+service = "tutorial-argon2"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "tutorial-d1-argon2"
+database_id = ""
+migrations_dir = "drizzle"
+
+
+[env.production]
+compatibility_date = "2024-04-05"
+
+[[env.production.services]]
+binding     = "ARGON2"
+service     = "tutorial-argon2"
+environment = "production"
+
+[[env.production.d1_databases]]
+binding       = "DB"
+database_name = "tutorial-d1-argon2"
+database_id   = ""
