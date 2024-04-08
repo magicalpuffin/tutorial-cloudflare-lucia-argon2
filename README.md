@@ -2,6 +2,9 @@
 
 Example of using Lucia Auth in Cloudflare with an Argon2 Rust Worker.
 
+The Argon2 worker is from:
+- https://github.com/glotlabs/argon2-cloudflare
+
 
 ## How to run
 
